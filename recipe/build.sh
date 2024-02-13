@@ -63,7 +63,7 @@ fi
     debug-symbols=off \
     threading=multi \
     runtime-link=shared \
-    link=shared \
+    link=static,shared \
     toolset=${TOOLSET} \
     include="${INCLUDE_PATH}" \
     cxxflags="${CXXFLAGS}" \
