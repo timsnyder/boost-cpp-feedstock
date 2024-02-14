@@ -32,7 +32,7 @@ LINKFLAGS="${LINKFLAGS} -L${LIBRARY_PATH}"
 CXX=${CXX_FOR_BUILD:-${CXX}} CC=${CC_FOR_BUILD:-${CC}} ./bootstrap.sh \
     --prefix="${PREFIX}" \
     --without-libraries=python \
-    --with-toolset=cxx \
+    --with-toolset=${TOOLSET} \
     --with-icu="${PREFIX}" || (cat bootstrap.log; exit 1)
 
 ADDRESS_MODEL="${ARCH}"
