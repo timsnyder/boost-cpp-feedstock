@@ -2,7 +2,7 @@
 {% set filename = "boost_%s.tar.bz2" % version.replace(".", "_") %}
 
 package:
-  name: boost-cpp
+  name: boost-cpp-plus_static
   version: {{ version }}
 
 source:
